@@ -3,12 +3,31 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hello World</title>
-  <link href='/style.css' rel='stylesheet'>
+  <title>Creator Search</title>
+  <link href="style.css" rel="stylesheet">
 </head>
 <body>
-  <h1>Hello, world!</h1>
-  <button onclick="console.log('hello');">Press me</button>
-  <script defer type="text/javascript" src="/main.js"></script>
+  <div class="container">
+    <header>
+      <h1>Creator Search</h1>
+      <p>Find YouTube creators by keyword</p>
+    </header>
+
+    <div class="search-bar">
+      <input
+        type="text"
+        id="keyword-input"
+        placeholder="e.g. cooking, tech reviews, travel..."
+        autocomplete="off"
+      />
+      <button id="search-btn">Search</button>
+    </div>
+
+    <div id="status-msg" class="status-msg hidden"></div>
+
+    <div id="results-grid" class="results-grid"></div>
+  </div>
+
+  <script src="main.js"></script>
 </body>
 </html>
