@@ -150,6 +150,25 @@ header p {
   color: #fff;
 }
 
+.filter-btn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.filter-btn .count {
+  display: inline-block;
+  background: rgba(255,255,255,0.18);
+  border-radius: 10px;
+  padding: 0 6px;
+  font-size: 0.75rem;
+  margin-left: 4px;
+}
+
+.filter-btn.selected .count {
+  background: rgba(255,255,255,0.3);
+}
+
 /* Results grid */
 .results-grid {
   display: grid;
