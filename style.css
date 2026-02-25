@@ -17,6 +17,25 @@ body {
   padding: 48px 24px;
 }
 
+/* Nav */
+.site-nav {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 24px;
+}
+
+.nav-link {
+  color: #aaa;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: color 0.15s;
+}
+
+.nav-link:hover {
+  color: #ff0000;
+}
+
 header {
   text-align: center;
   margin-bottom: 36px;
@@ -33,6 +52,137 @@ header p {
   margin-top: 8px;
   color: #aaa;
   font-size: 1rem;
+}
+
+/* Partnership form */
+.form-wrap {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+@media (max-width: 540px) {
+  .form-row { grid-template-columns: 1fr; }
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #ccc;
+}
+
+.required {
+  color: #ff0000;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid #333;
+  background: #1a1a1a;
+  color: #f1f1f1;
+  font-size: 0.95rem;
+  font-family: inherit;
+  outline: none;
+  transition: border-color 0.2s;
+  resize: vertical;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #ff0000;
+}
+
+.form-group select option {
+  background: #1a1a1a;
+}
+
+#submit-btn {
+  width: 100%;
+  padding: 14px;
+  background: #ff0000;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-top: 4px;
+}
+
+#submit-btn:hover  { background: #cc0000; }
+#submit-btn:disabled { background: #555; cursor: not-allowed; }
+
+.form-success {
+  text-align: center;
+  padding: 48px 24px;
+}
+
+.success-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #ff0000;
+  color: #fff;
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+}
+
+.form-success h2 {
+  font-size: 1.4rem;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.form-success p {
+  color: #aaa;
+  margin-bottom: 24px;
+}
+
+.btn-reset {
+  display: inline-block;
+  padding: 10px 24px;
+  border: 1px solid #333;
+  border-radius: 8px;
+  color: #aaa;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.btn-reset:hover {
+  border-color: #ff0000;
+  color: #fff;
+}
+
+.form-error {
+  margin-top: 12px;
+  padding: 12px 16px;
+  border-radius: 8px;
+  background: rgba(255, 107, 107, 0.1);
+  border: 1px solid #ff6b6b;
+  color: #ff6b6b;
+  font-size: 0.9rem;
+  text-align: center;
 }
 
 /* Search bar */
